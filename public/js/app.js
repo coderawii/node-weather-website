@@ -24,8 +24,8 @@ weatherForm.addEventListener('submit', (e) => {
             if(podaci.error) {
                 messageTwo.textContent = podaci.error
             } else {
-                messageOne.textContent = `Lokacija je: ${podaci.lokacija}`
-                messageTwo.textContent = `Prognoza je: ${podaci.prognoza}`
+                messageOne.textContent = `Location: ${podaci.lokacija}`
+                messageTwo.textContent = `Forecast: ${podaci.prognoza}`
             }
         })
     })

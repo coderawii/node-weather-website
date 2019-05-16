@@ -24,7 +24,8 @@ app.get('', (req, res) => {
     res.render('index', {
         naslov: 'Weather',
         opis: 'DYNAMIC with hbs tj. {{naslov}}',
-        ime: 'Andrew Mead'
+        // ime: 'Andrew Mead'
+        ime: 'Marta Bires'
     })
 })
 
@@ -39,7 +40,8 @@ app.get('/about', (req, res) => {
 app.get('/help', (req, res) => {
     res.render('help', {
         naslov: 'Help',
-        ime: "Dragana Marinkovic",
+        // ime: "Dragana Marinkovic",
+        ime: 'Marta Bires',
         opis: 'Ovo mozemo zahvaljujuci hbs-u. Help dynamic page with hbs, res.render()'
     })
 })
