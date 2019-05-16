@@ -15,6 +15,8 @@ const forecast = (latitude, longitude, callback) => {
         } else if ( body.error) {
             callback('Nemoguce pronaci lokaciju!', undefined)
         } else {
+            // console.log(body.daily.data[0]); //! da vidimo u terminalu prvo sta se nalazi u body-u, moramo da ukucamo u browseru u input nesto pa search da bi se to odradilo, logicno
+            
             callback(undefined, 
                 `${body.daily.data[0].summary} It is currently ${body.currently.temperature}℃ out. 
                 There is a ${body.currently.precipProbability}% chance of rain.
